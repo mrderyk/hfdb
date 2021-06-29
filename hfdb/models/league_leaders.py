@@ -17,7 +17,7 @@ class LeagueLeadersRegular(Model):
       'id': self.id,
       'category': self.category,
       'date': self.date,
-      'player_keys_and_stats': self.player_keys
+      'player_keys_and_stats': self.player_keys_and_stats
     }
 
 class LeagueLeadersPlayoff(LeagueLeadersRegular):
