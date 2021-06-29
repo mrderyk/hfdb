@@ -35,7 +35,7 @@ class Player(Model):
         'dob': self.dob,
         'birth_city': self.birth_city,
         'birth_country': self.birth_country,
-        'team_name': self.team_name,
+        'team_name': self.team_code,
         'key': self.key,
         'img_url': self.img_url,
         'is_rookie': self.is_rookie
