@@ -1,4 +1,5 @@
 from peewee import Model, BooleanField, CharField, IntegerField, DateField
+from playhouse.postgres_ext import ArrayField
 from .. connection import db
 
 
@@ -22,6 +23,7 @@ class Player(Model):
     is_rookie = BooleanField()
     roster_status = IntegerField()
     injury = CharField()
+    searchable_tokens = ArrayField(field_class=CharField)
 
     def serialize(self):
       return {
