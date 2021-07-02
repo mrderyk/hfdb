@@ -6,7 +6,7 @@ setup(
     author='Deryk DeGuzman',
     packages=find_packages(),
     install_requires=['peewee'],
-    version='0.0.4',
+    version='0.0.5',
     license='UNLICENSED',
     description='Hoops Fusion database modules',
 )
