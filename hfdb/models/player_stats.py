@@ -122,6 +122,7 @@ class PlayerStatsRegular(Model):
   def serialize(self):
     return {
       'player_key': self.player_key,
+      'season': self.season,
       'stats': {
         'gp': self.gp,
         'gm': self.gm,
