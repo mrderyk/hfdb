@@ -9,9 +9,11 @@ def get_latest_playoff_leaders():
   max_date = LeagueLeadersPlayoff.select(fn.MAX(LeagueLeadersPlayoff.date))
   return LeagueLeadersPlayoff.select().where(LeagueLeadersPlayoff.date == max_date)
 
+
 def get_latest_regular_season_leaders():
   max_date = LeagueLeadersRegular.select(fn.MAX(LeagueLeadersRegular.date))
   return LeagueLeadersRegular.select().where(LeagueLeadersRegular.date == max_date)
+
 
 def get_playoff_leaders(date=None):
   if date:
